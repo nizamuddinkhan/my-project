@@ -1,0 +1,14 @@
+{
+  "name": "nizamuddin",
+  "version": "0.0.1",
+  "description": "this is my first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.test"
+  },
+  "keywords": [
+    "project"
+  ],
+  "author": "nizamuddin khan",
+  "license": "BSD-2-Clause"
+}
