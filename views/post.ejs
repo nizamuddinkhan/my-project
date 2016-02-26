@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is post</title>
+</head>
+<body>
+<% if(typeof(token)!=='undefined') {%>
+<h>token is :<%= token %></h>
+<% } %>
+<div class="post-comment">
+<form action="http://127.0.0.1:3000/post-comment" method="POST">
+   <% if(typeof(id)!=='undefined') {%>
+    <input type="hidden" name ="id1" value="<%= id %>">
+    <%}%>
+    <input type="text" name="title" placeholder="Enter Your Title Here">
+	<textarea name="postBody" placeholder="Your Body"></textarea>
+	<input type="submit" name="Submit">
+</form>
+</div>
+
+<% for(var i=0; i<title.length; i++) {%>
+   <li><%= title[i] %></li>
+   <dl><%= postBody[i] %></dl>
+   <form method="POST" action="http://127.0.0.1:3000/post-delete">
+   <input type="hidden" name="id1" value="<%= id %>">
+   <input type="hidden" name="postValue" value="<%= postBody[i] %>">
+   <input type="hidden" name="titleValue" value="<%= title[i] %>">
+  <button type="submit">Delete</button>
+</form>
+<% } %>
+</body>
+</html>

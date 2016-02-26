@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Token</title>
+</head>
+<body>
+	<h1>Your token is</h1>
+	<h1><%= token %></h1>
+	<h1>Expires in 10 mins</h1>
+	<form action="http://127.0.0.1:3000/tokenSend" method="POST" >
+			<input type="hidden" name="id1" value="<%=id%>">
+			<input type="hidden" name="token" value="<%=token%>">
+			<h1>Click Here To update password</h1>
+			<input type="submit" name="Click Here">
+			
+	</form>
+
+</body>
+</html>
