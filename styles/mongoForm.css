@@ -1,7 +1,11 @@
 div.clear {
     clear:both;
 }
-
+a
+{
+        width: 100%;
+    margin: 29% 0% 52% 59%;
+}
 body{
     width:100%;
     margin: 0 auto;

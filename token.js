@@ -62,6 +62,7 @@ app.get('/forgetPassword.html',function(req,res)
   res.sendFile(__dirname+('/forgetPassword.html'));
 })
 
+
 app.locals.pagetitle='Students page';
 
 
